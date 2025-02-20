@@ -58,6 +58,8 @@ while true; do
             echo "Database '$db_name' does not exist."
         fi
         break
+
+        
         ;;
     4)
         read -p "ENTER DATABASE NAME TO DELETE:" db_name
