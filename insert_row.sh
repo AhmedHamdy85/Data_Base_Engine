@@ -23,6 +23,7 @@ if [ -f "$table_path" ]; then
                 
                 int)
                     if [[ "$value" =~ ^-?[0-9]+$ ]]; then
+                        # is_exested=$(awk -v value="$value" -v col_name="$col_name" -F, 'BEGIN{found=0} {if($1==value) found=1} END{print found}' "$table_path")
                         valid=true
                     else
                         echo -e "${RED}Invalid input. Expected an integer. ${RESET}"
@@ -37,7 +38,7 @@ if [ -f "$table_path" ]; then
                     fi
                     ;;
                 string)
-                    if [[ "$value" =~ ^[a-zA-Z_][a-zA-Z0-9_]*$ ]]; then
+                    if [[ "$value" != "" ]]; then
                         valid=true
                     else
                         echo -e "${RED}Invalid input. Expected a string. ${RESET}"

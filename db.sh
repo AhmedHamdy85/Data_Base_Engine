@@ -84,10 +84,17 @@ while true; do
          break
         ;;
     6)
-        echo -e "${CYAN}Exiting. Goodbye!${RESET}"
-        exit 0
-        ;;
+    read -p "Are you sure you want to exit? (y/n): " confirm
+     
+            if [[ $confirm == "y" || $confirm == "Y" || $confirm == "yes" || $confirm == "YES" ]]; then
+                            echo -e "${CYAN}Exiting. Goodbye! ${RESET}"
+
+                exit 0
+            fi
+            break
+            ;;
     *)
+    
         echo "Invalid option. Please choose a valid number."
         ;;
     esac
