@@ -50,7 +50,7 @@ To install and set up the Data Base Engine, follow these steps:
 
 4. Run the setup script to initialize the database engine:
     ```sh
-    ./setup.sh
+    ./db.sh
     ```
 
 ## Usage
@@ -59,7 +59,7 @@ To use the Data Base Engine, follow these steps:
 
 1. Start the database engine:
     ```sh
-    ./start.sh
+    ./db.sh
     ```
 
 2. Use the provided commands to interact with the database:
@@ -85,9 +85,7 @@ We welcome contributions from the community! If you would like to contribute to 
 
 Please make sure to update tests as appropriate.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
@@ -95,7 +93,7 @@ If you have any questions or suggestions, feel free to contact the project maint
 
 - **Ahmed Hamdy**
 - [GitHub](https://github.com/AhmedHamdy85)
-- [Email](mailto:ahmed.hamdy@example.com)
+- [Email](mailto:ahmed.hamdi.ramadan@gmail.com)
 
 ---
 
